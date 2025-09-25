@@ -1,5 +1,5 @@
 
-/* === Global Reset & Base === */
+
 *,
 *::before,
 *::after { box-sizing: border-box; }
@@ -14,7 +14,7 @@ body {
   background-color: #f7f7f7;
 }
 
-/* === Layout Helpers === */
+
 main {
   display: block;
 }
@@ -25,7 +25,7 @@ main {
   padding: 1rem;
 }
 
-/* === Header === */
+
 header {
   background: #0b5cff;
   color: white;
@@ -39,7 +39,7 @@ header h1 {
   letter-spacing: 0.5px;
 }
 
-/* === Navigation === */
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -57,7 +57,7 @@ nav a {
   transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
 }
 
-nav a:hover,
+
 nav a:focus-visible {
   background: rgba(255, 255, 255, 0.2);
   outline: none;
@@ -70,7 +70,7 @@ nav a[aria-current="page"] {
   font-weight: 600;
 }
 
-/* === Headings === */
+
 h1, h2, h3 {
   line-height: 1.2;
 }
@@ -80,7 +80,7 @@ h1 {
   font-size: clamp(1.35rem, 2.2vw, 2rem);
 }
 
-/* === Sections === */
+
 section {
   background: white;
   border: 1px solid #e6e6e6;
@@ -96,14 +96,14 @@ section h2 {
   color: #0b3fb3;
 }
 
-/* === Lists inside content === */
+
 ol, ul {
   padding-left: 1.2rem;
 }
 
 li { margin: 0.35rem 0; }
 
-/* === Footer === */
+
 footer {
   background: #111827;
   color: #d1d5db;
@@ -122,7 +122,7 @@ footer p {
   margin: 0;
 }
 
-/* === Media Queries === */
+
 @media (min-width: 640px) {
   header .wrapper,
   footer .wrapper,
