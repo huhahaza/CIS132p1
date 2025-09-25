@@ -1,0 +1,133 @@
+
+/* === Global Reset & Base === */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.6;
+  color: #222;
+  background-color: #f7f7f7;
+}
+
+/* === Layout Helpers === */
+main {
+  display: block;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* === Header === */
+header {
+  background: #0b5cff;
+  color: white;
+  padding: 1rem 0;
+  border-bottom: 4px solid #063ab3;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  letter-spacing: 0.5px;
+}
+
+/* === Navigation === */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+nav a[aria-current="page"] {
+  background: white;
+  color: #0b5cff;
+  font-weight: 600;
+}
+
+/* === Headings === */
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 1.25rem;
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+}
+
+/* === Sections === */
+section {
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+section h2 {
+  margin-top: 0.25rem;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  color: #0b3fb3;
+}
+
+/* === Lists inside content === */
+ol, ul {
+  padding-left: 1.2rem;
+}
+
+li { margin: 0.35rem 0; }
+
+/* === Footer === */
+footer {
+  background: #111827;
+  color: #d1d5db;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-top: 4px solid #0b5cff;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #9cc1ff;
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* === Media Queries === */
+@media (min-width: 640px) {
+  header .wrapper,
+  footer .wrapper,
+  main .wrapper {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
